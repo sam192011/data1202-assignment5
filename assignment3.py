@@ -3,7 +3,7 @@ import pandas as pd
 import pymysql
 import cryptography
 
-sqlEngine = create_engine('mysql+pymysql://root:joefooty07@127.0.0.1')
+sqlEngine = create_engine('mysql+pymysql://root:@127.0.0.1')
 dbConnection = sqlEngine.connect()
 vgsales = text("SELECT * FROM data1202.vgsales")
 frame = pd.read_sql(vgsales, con = dbConnection)
